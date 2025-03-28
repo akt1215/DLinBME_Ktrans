@@ -168,7 +168,10 @@ def update_data(data,cp): # 去除q队列参数
 
 # 路径需要更改
 # data_root = '/media/sail/Elements/BME_Grad_Project/Joanne/BBB_DL/demo/data/' # 原始数据存储路径
-data_root = '/data0/BME_caoanbo/project_coding/K-trans_STNet/data/'
+# data_root = '/data0/BME_caoanbo/project_coding/K-trans_STNet/data/'
+
+# New Additions
+data_root = 'C:\\Users\\Akito Yamauchi\\DLinBME_Ktrans'
 # project_root = '/media/sail/Elements/BME_Grad_Project/Joanne/BBB_DL/demo/data/DL_input/' # 处理后的数据作为模型输入的存储路径
 project_root = '/data0/BME_caoanbo/project_coding/K-trans_STNet/data/DL_input/' # 处理后的数据作为模型输入的存储路径
 # project_root = '/data1/BME_caoanbo/project_coding/K-trans_STNet/data/DL_input' # data0磁盘满了，(仅)测试数据放data1
@@ -298,9 +301,9 @@ for pat_name in os.listdir(os.path.join(data_root, 'raw/params_High')):
 print('save_dir: ',save_dir) # save_dir是处理好，作为模型输入的数据
 print('全脑的总的体素点是：', totalvoxel_count) # 这里的全脑只计算了有半暗带标签的，72份
 
-#python3 from_mat_to_npy.py --save_path=ST_pad_InRawLowDCE_GtRaw_KtransTh/ --output='OP_NM_CAlow' --ratio 1 1
-#python3 from_mat_to_npy.py --save_path=ST_pad_InRawLowDCE_GtRaw_KtransTh_patchsteps3/ --output='OP_NM_CAlow' --ratio 1 4 --patch_steps 3
-#python3 from_mat_to_npy.py --save_path=ST_pad_InRawLowDCE_GtRaw_KtransTh/ --output='WB_CAlow' 
+# python3 from_mat_to_npy.py --save_path=ST_pad_InRawLowDCE_GtRaw_KtransTh/ --output='OP_NM_CAlow' --ratio 1 1
+# python3 from_mat_to_npy.py --save_path=ST_pad_InRawLowDCE_GtRaw_KtransTh_patchsteps3/ --output='OP_NM_CAlow' --ratio 1 4 --patch_steps 3
+# python3 from_mat_to_npy.py --save_path=ST_pad_InRawLowDCE_GtRaw_KtransTh/ --output='WB_CAlow'
 
 #python3 from_mat_to_npy.py --save_path=ST_pad_InRawHighDCE_GtRaw_KtransTh/ --output='OP_NM_CAhigh' --ratio 1 1
 #python3 from_mat_to_npy.py --save_path=ST_pad_InRawHighDCE_GtRaw_KtransTh_patchsteps3/ --output='OP_NM_CAhigh' --ratio 1 4 --patch_steps 3
